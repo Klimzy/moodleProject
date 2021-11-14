@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  font-family: 'HelveticaNeue-Thin';
+
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(251, 251, 253, 1);
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+
+  height: 45px;
+  background-color: rgba(50, 50, 50, 1);
+}
+
+.easter_egg {
+  color: white;
+  padding-top: 1%;
+  padding-left: 40%;
+}
+
+.button_area {
+  margin-top: 5%;
+}
+
+#createNewAnswerAreaButton{
+  background-color: green;
+  height: 15px;
+  width: 5px;
+
+}
+
+.answerBlock{
+  padding-top: 5px;
+}
+
+#blockedAnswerBlock{
+  padding-top: 5px;
+}
