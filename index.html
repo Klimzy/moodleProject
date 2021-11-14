@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
 
-    <title>Генератор вопросов Moodle</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 
-
-  <body>
-    <div class="wrapper">
-      <header class="header"> </header>
-      <main class="main"></main>
-      <footer class="footer">Hello</footer>
-
-    </div>
+  <title>Генератор вопросов Moodle</title>
+</head>
 
 
+<body>
+  <div class="wrapper">
+    <header class="header"> </header>
 
-  </body>
+
+    <main class="main">
+      <form id="taskForm">
+        <input type="text" required placeholder="Вопрос" id="inputQuestion">
+
+
+        <div class="blockedAnswerBlock">
+          <button type="button" name="addAnswerBlockButton"></button>
+          <input type="text" disabled>
+        </div>
+
+        <div class="buttonsBlock">
+          <input type="reset" value='Очистить форму'>
+          <input type="submit" value="Создать вопрос">
+        </div>
+
+      </form>
+
+
+    </main>
+
+
+
+    <footer class="footer">Hello</footer>
+
+  </div>
+
+
+
+</body>
+
 </html>

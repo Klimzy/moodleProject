@@ -11,12 +11,13 @@ body {
 }
 
 .main{
-  padding:20px;
+
   flex: 1 1 auto;
 }
 
 .footer {
   background-color: red;
-  padding:20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   text-align: center;
 }
