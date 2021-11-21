@@ -19,14 +19,15 @@
         <input type="text" required placeholder="Вопрос" id="inputQuestion">
 
 
-        <div class="blockedAnswerBlock">
-          <button type="button" name="addAnswerBlockButton"></button>
+
+        <div id="blockedAnswerBlock">
+          <button type="button" id="createAnswerBlockButton"></button>
           <input type="text" disabled>
         </div>
 
         <div class="buttonsBlock">
-          <input type="reset" value='Очистить форму'>
-          <input type="submit" value="Создать вопрос">
+          <input id="resetFormButton" type="button" value='Очистить форму'>
+          <input id = 'onSubmitButton' type="submit" value="Создать вопрос">
         </div>
 
       </form>
@@ -41,7 +42,8 @@
   </div>
 
 
-
+<script src="view.js">
+</script>
 </body>
 
 </html>
