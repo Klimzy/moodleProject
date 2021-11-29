@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+}
+
+*{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction:column;
+
+}
+
+.main{
+
+  flex: 1 1 auto;
+}
+
+.footer {
+  background-color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
+
+  display: flex;
+
+
+
+
+}
+
+#taskForm{
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+
+#inputQuestion{
+  width: 295px;
+  margin-bottom:10px;
+}
+
+.answerBlock{
+  display:flex;
+  padding-top:10px;
+}
+
+.checkbox{
+  height:27px;
+  width:27px;
+  margin: 0px 10px 0px 5px;
+
+}
+.textInput{
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.createAnswerBlockArea{
+  margin-top: 10px;
+}
+.feedbackIconsBlock{
+  margin-left: 45%;
+}
+
+.feedbackIcon{
+  width: 30px;
+  height: 30px;
+  padding: 10px 10px 0 0px;
+}

@@ -1,0 +1,90 @@
+#createAnswerBlockButton{
+
+  width:290px;
+  height:30px;
+  color: rgb(227, 227, 227);
+  background-color: rgba(51, 51, 51, 0.9);
+  border: 1px;
+  border-radius:5px;
+  margin-left: 15px;
+
+  -webkit-transition: hover 0.2s ease-in-out;
+}
+
+#createAnswerBlockButton:hover{
+  background-color: rgba(51, 51, 51, 1);
+}
+
+#createAnswerBlockButton:active{
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+.buttonBlock{
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+#resetFormButton{
+  width: 145px;
+  height: 30px;
+
+  background-color: rgba(224, 67, 69, 0.85);
+  color: rgb(255, 255, 255);
+
+  border: 1px solid;
+  border-radius:5px;
+}
+
+#resetFormButton:hover{
+  -webkit-transition: hover 0.2s ease-in-out;
+  background-color: rgba(224, 67, 69, 0.95);
+}
+
+#resetFormButton:active{
+  background-color: rgba(224, 67, 69, 0.8);
+}
+
+#onSubmitButton{
+  width: 145px;
+  height: 30px;
+
+  background-color: rgba(83, 113, 83, 0.85);
+  color: rgb(255, 255, 255);
+
+  -webkit-transition: hover 0.2s ease-in-out;
+
+  border: 0px solid;
+  border-radius:5px;
+}
+
+#onSubmitButton:hover{
+  background-color: rgba(83, 113, 83, 0.95);
+}
+
+#onSubmitButton:active{
+  background-color: rgba(83, 113, 83, 0.85);
+}
+
+
+
+#saveMoodleFormatTasksButton{
+
+  margin-top: 10px;
+  width:290px;
+  height:30px;
+  color: rgb(227, 227, 227);
+  background-color: rgba(51, 51, 51, 0.9);
+  border: 1px;
+  border-radius:5px;
+  margin-left: 15px;
+
+  -webkit-transition: hover 0.2s ease-in-out;
+}
+
+#saveMoodleFormatTasksButton:hover{
+  background-color: rgba(51, 51, 51, 1);
+}
+
+#saveMoodleFormatTasksButton:active{
+  background-color: rgba(51, 51, 51, 0.9);
+}
