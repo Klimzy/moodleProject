@@ -43,8 +43,6 @@ function createAnswerBlock() {
 
   answerBlock.append(checkbox, inputAnswer);
   document.forms[0].append(answerBlock);
-
-
 }
 
 function cleanForm() {

@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/buttons.css">
+
+
 
   <title>Генератор вопросов Moodle</title>
 </head>
@@ -16,34 +19,38 @@
 
     <main class="main">
       <form id="taskForm">
-        <input type="text" required placeholder="Вопрос" id="inputQuestion">
+        <input type="text" class='textInput' required placeholder="Вопрос" id="inputQuestion">
 
 
 
-        <div id="blockedAnswerBlock">
-          <button type="button" id="createAnswerBlockButton"></button>
-          <input type="text" disabled>
-        </div>
 
-        <div class="buttonsBlock">
-          <input id="resetFormButton" type="button" value='Очистить форму'>
-          <input id = 'onSubmitButton' type="submit" value="Создать вопрос">
-        </div>
 
       </form>
+
+      <div class='buttonBlock'>
+        <input type="button" id="createAnswerBlockButton" value="Добавить ответ">
+      </div>
+
+      <div class="buttonBlock">
+        <input id="resetFormButton" type="button" value='Очистить форму'>
+        <input id='onSubmitButton' type="submit" value="Создать вопрос">
+      </div>
+
+      <div class='buttonsBlock'>
+        <input id='saveMoodleFormatTasksButton'  type="button" value = 'Скачать вопросы'>
+      </div>
 
 
     </main>
 
-
-
-    <footer class="footer">Hello</footer>
+    <footer class="footer"></footer>
 
   </div>
 
 
-<script src="view.js">
-</script>
+  <script src="scripts/view.js"></script>
+  <script src="scripts/data.js"></script>
+  <script src="scripts/controller.js"></script>
 </body>
 
 </html>
