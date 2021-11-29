@@ -46,11 +46,15 @@ function getQuestion() {
 }
 
 function getTaskPoints() {
-  let taskForm = document.getElementById('taskForm');
+  let tasksBlocks = document.querySelectorAll('.answerBlock');
   let tasksPointsArray = [];
 
-  for (let i = 1; i < taskForm.length; i += 2) {
-    tasksPointsArray.push(new TaskPoint(taskForm[i + 1].value, taskForm[i].checked));
+  for (let i = 0; i < tasksBlocks.length; i++) {
+    let answer = tasksBlocks[i].querySelector('.textInput').value;
+    let isRight = tasksBlocks[i].querySelector('.checkbox').checked;
+
+    tasksPointsArray.push(new TaskPoint(answer, isRight))
   }
+
   return tasksPointsArray;
 }
