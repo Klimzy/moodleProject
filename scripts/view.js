@@ -36,16 +36,19 @@ function createAnswerBlock() {
   inputAnswer.type = 'text';
   inputAnswer.placeholder = ' Ответ №' + (document.querySelectorAll('.answerBlock').length + 1);
   inputAnswer.required = true;
-  inputAnswer.className = 'textInput';
+  inputAnswer.className = 'textInput _required';
   inputAnswer.value = 'Ответ ' + (document.querySelectorAll('.answerBlock').length + 1)
 
 
 
   answerBlock.append(checkbox, inputAnswer);
-  document.forms[0].append(answerBlock);
+  document.querySelector('.buttonBlock').before(answerBlock);
 }
 
 function cleanForm() {
+  let form = document.getElementById('taskForm');
+  formRemoveError(form);
+
   document.getElementById('inputQuestion').value = '';
 
   let a = document.querySelectorAll('.answerBlock');
@@ -53,18 +56,19 @@ function cleanForm() {
     a[i].remove()
   }
 
+
   createAnswerBlock();
   createAnswerBlock();
 }
 
 function createTask() {
+  let form = document.getElementById('taskForm');
 
-
-  tasksArray.push(new Task(getQuestion(), getTaskPoints()));
-
-  tasksArray[tasksArray.length - 1].displayTask();
-
-  cleanForm();
+    formRemoveError(form);
+    if(checkboxValidate(form) && textInputValidate(form)){
+    tasksArray.push(new Task(getQuestion(), getTaskPoints()));
+    tasksArray[tasksArray.length - 1].displayTask();
+  }
 }
 
 

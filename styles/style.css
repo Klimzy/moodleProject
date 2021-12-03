@@ -51,6 +51,7 @@ body {
   height:27px;
   width:27px;
   margin: 0px 10px 0px 5px;
+  border:10px solid;
 
 }
 .textInput{
@@ -71,4 +72,15 @@ body {
   width: 30px;
   height: 30px;
   padding: 10px 10px 0 0px;
+}
+
+
+
+
+
+
+._error{
+  border-color:rgba(175, 15, 0, 1);
+  box-shadow: 0 0 5px rgba(175, 15, 0, 1);
+
 }
