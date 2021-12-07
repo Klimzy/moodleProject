@@ -9,13 +9,16 @@ function init() {
 
 
   let createTaskButton = document.getElementById('onSubmitButton');
-  createTaskButton.addEventListener('click', createTask);
+  createTaskButton.addEventListener('click', addTaskToTaskArray);
 
-  // let saveMoodleFormatTasksButton = document.getElementById('saveMoodleFormatTasksButton');
-  // saveMoodleFormatTasksButton.addEventListener('click', convertToMoodleFormatTasks)
+  let saveMoodleFormatTasksButton = document.getElementById('saveMoodleFormatTasksButton');
+  saveMoodleFormatTasksButton.addEventListener('click', saveTasks)
 
   createAnswerBlock();
   createAnswerBlock();
+
+
+
 
 }
 
@@ -37,7 +40,7 @@ function createAnswerBlock() {
   inputAnswer.placeholder = ' Ответ №' + (document.querySelectorAll('.answerBlock').length + 1);
   inputAnswer.required = true;
   inputAnswer.className = 'textInput _required';
-  inputAnswer.value = 'Ответ ' + (document.querySelectorAll('.answerBlock').length + 1)
+  //inputAnswer.value = 'Ответ ' + (document.querySelectorAll('.answerBlock').length + 1)
 
 
 
@@ -61,23 +64,9 @@ function cleanForm() {
   createAnswerBlock();
 }
 
-function createTask() {
-  let form = document.getElementById('taskForm');
-
-    formRemoveError(form);
-    if(checkboxValidate(form) && textInputValidate(form)){
-    tasksArray.push(new Task(getQuestion(), getTaskPoints()));
-    tasksArray[tasksArray.length - 1].displayTask();
-  }
-}
-
-
-// function convertTasksToMoodleFormat(){
-//
-// }
-
-
-
-
 
 window.onload = init;
+
+window.onbeforeunload = function() {
+	return true;
+};
